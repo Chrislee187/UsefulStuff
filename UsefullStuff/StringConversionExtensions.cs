@@ -36,6 +36,14 @@ namespace UsefulStuff
             return decimal.TryParse(value, out result) ? result : dflt;
         }
 
+
+        public static bool ToBool(this string value, bool dflt = false)
+        {
+            if (value.Length == 0) return false;
+
+            var c1 = value.ToLower()[0];
+            return new[] { 'y', 't', '1' }.Any(c => c == c1);
+        }
         public static DateTime? ToDateTime(this string value, DateTime? dflt = null)
         {
             DateTime result;
