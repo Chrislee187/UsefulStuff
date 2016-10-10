@@ -1,3 +1,4 @@
+Set-Alias -name vs -value 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe'
 set-alias -name npp -value 'C:\Program Files (x86)\Notepad++\notepad++.exe' -scope Global
 set-alias -name subl -value 'C:\Program Files\Sublime Text 2\sublime_text.exe' -scope Global
 set-alias -name mine -value 'C:\Program Files (x86)\JetBrains\RubyMine 2016.2.3\bin\RUBYMINE.BAT' -scope Global
