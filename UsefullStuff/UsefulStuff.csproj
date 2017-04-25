@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AttributeExtensions.cs" />
     <Compile Include="ByteConversionExtensions.cs" />
+    <Compile Include="CollectionExtensions.cs" />
     <Compile Include="LocaleStrings.cs" />
     <Compile Include="StreamExtensions.cs" />
     <Compile Include="StringConversionExtensions.cs" />
