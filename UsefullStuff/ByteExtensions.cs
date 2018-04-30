@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UsefulStuff
 {
-    public static class ByteConversionExtensions
+    public static class ByteExtensions
     {
         public static string ToBlockCopyString(this byte[] bytes)
         {
@@ -25,6 +25,17 @@ namespace UsefulStuff
         public static string ToUtf8String(this byte[] bytes)
         {
             return Encoding.UTF8.GetString(bytes);
+        }
+
+        public static string ToUtf8(this byte[] bytes)
+        {
+            return System.Text.Encoding.UTF8.GetString(bytes);
+        }
+
+        public static int ToInt(this byte[] bytes, bool bigendian = false)
+        {
+            // Are these the right way round lol?
+            return bigendian ? (bytes[0] * 256) + bytes[1] : (bytes[1] * 256) + bytes[0];
         }
     }
 }
