@@ -42,7 +42,7 @@ namespace UsefulStuff
             if (value.Length == 0) return false;
 
             var c1 = value.ToLower()[0];
-            return new[] { 'y', 't', '1' }.Any(c => c == c1);
+            return new[] { 'yes', 'true', '1' }.Any(c => c == c1);
         }
         public static DateTime? ToDateTime(this string value, DateTime? dflt = null)
         {
