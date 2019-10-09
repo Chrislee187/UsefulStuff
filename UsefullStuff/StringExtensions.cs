@@ -34,5 +34,19 @@ namespace UsefulStuff
             return source;
 
         }
+        
+        
+        public static string Reverse(this string text)
+        {
+            var enumerator = StringInfo.GetTextElementEnumerator(text);
+
+            var elements = new List<string>();
+            while (enumerator.MoveNext())
+                elements.Add(enumerator.GetTextElement());
+
+            elements.Reverse();
+            return string.Concat(elements);
+        }
+
     }
 }
