@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\Directory\shell\windirstat]
+@="WinDirStat Here"
+[HKEY_CLASSES_ROOT\Directory\shell\windirstat\command]
+@="\"C:\\Program Files (x86)\\WinDirStat\\windirstat.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\Drive\shell\windirstat]
+@="WinDirStat Here"
+[HKEY_CLASSES_ROOT\Drive\shell\windirstat\command]
+@="\"C:\\Program Files (x86)\\WinDirStat\\windirstat.exe\" \"%*\""
